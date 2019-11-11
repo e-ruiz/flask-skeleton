@@ -31,3 +31,5 @@ routes = [
 # Register blueprint(s) #lazyDev
 for route in routes:
     api.register_blueprint(route['blueprint'], url_prefix=route['url'])
+
+

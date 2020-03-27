@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from flask import Blueprint, Response, request, json, jsonify, abort
+from flask import Blueprint, Response, request, json
 from . models import Hello
+import settings
 import json
 
 hello = Blueprint('hello', __name__, template_folder='templates')
@@ -16,3 +17,4 @@ def get_hello():
 
     return Response(json.dumps({"msg": msg}) , mimetype='application/json', status=200)
     # return jsonify({"msg": msg})
+

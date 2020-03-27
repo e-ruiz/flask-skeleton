@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from api import api as application
+from app import app as application
 import os
 
 if __name__ == "__main__":    
